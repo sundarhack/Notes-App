@@ -2,6 +2,7 @@
   "name": "notes",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://sundarhack.github.io/Notes-App/",
   "dependencies": {
     "cra-template": "1.2.0",
     "react": "^19.0.0",
@@ -15,7 +16,9 @@
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -36,6 +39,7 @@
     ]
   },
   "devDependencies": {
-    "eslint-plugin-react": "^7.37.2"
+    "eslint-plugin-react": "^7.37.2",
+    "gh-pages": "^6.2.0"
   }
 }
